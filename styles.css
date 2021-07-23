@@ -1,0 +1,90 @@
+
+.add-btn {
+	cursor: pointer;
+	background-color: #ffffff; /* Green */
+}
+
+.remove-btn {
+	cursor: pointer;
+	color: white;
+	background-color: #c2585c
+}
+
+#save-btn {
+	cursor: pointer;
+	color: white;
+	background-color: #4CAF50;
+}
+
+body {
+	background-color: rgb(122, 65, 122);
+	color: white;
+}
+
+#import-btn {
+  background-color: #4CAF50; /* Green */
+	color: white;
+}
+
+#export-btn {
+	background-color: #5886c2;
+	color: white;
+}
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+	cursor: pointer;
+}
+
+/*Switch curtousy of https://codepen.io/garetmckinley/pen/YmxYZr*/
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: #4CAF50;
+}
+.toggle-control input:checked ~ .control:after {
+  left: 25px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: darkgray;
+  transition: background-color 0.15s ease-in;
+}
+.toggle-control .control:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2.5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background: white;
+  transition: left 0.15s ease-in;
+}

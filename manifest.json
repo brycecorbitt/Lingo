@@ -1,0 +1,25 @@
+{
+  "name": "Lingo",
+  "description": "For an internet that speaks YOUR language 😎. Substitute words or phrases for your browsing pleasure.",
+  "version": "1.0",
+  "manifest_version": 3,
+	"author": "Bryce Corbitt",
+  "content_scripts": [{
+    "js": ["loader.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "web_accessible_resources": [{
+    "resources": ["lingo_rule.js", "lingo.js"],
+    "matches": ["<all_urls>"]
+  }],
+	"permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "/images/lingo_16.png",
+      "32": "/images/lingo_32.png",
+      "48": "/images/lingo_48.png",
+      "128": "/images/lingo_128.png"
+    }
+	}
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <H1>Lingo!</H1>
+    <label class="toggle-control">
+      <input type="checkbox" id="enable-switch">
+      <span class="control"></span>
+      <span id="enable-text">On</span>
+    </label>
+    <div style="text-align: right; margin-bottom: 20px;">
+      <input type="text" value="" id="import-rules", name="import-rules" placeholder="Paste Rules JSON here!">
+      <Button class="btn" id="import-btn">Import Rules
+      </label>
+    </div>
+    <div id="rules"></div>
+    <br>
+    <button class="add-btn" id="add-btn">Add new</button>
+    <br>
+    <div style="text-align: center;">
+      <button id="save-btn">Save & Reload</button>
+    </div>
+    <div style="text-align: right;">
+      <a style="float: left;color: white" href="https://github.com/brycecorbitt/Lingo">Source Code</a>
+      <button class="btn" id="export-btn">Export Rules</button>
+    </div>
+  </body>
+  <script src="ui.js"></script>
+</html>
